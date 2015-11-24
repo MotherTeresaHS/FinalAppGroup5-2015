@@ -5,6 +5,7 @@
 -- Created on: Nov 2015
 -- Created for: ICS20
 -- This program is a test app for group 5
+-- test change
 
 -- Use this function to perform your initial setup
 function setup()
@@ -17,12 +18,14 @@ function setup()
     pushStyle()
     
     --create the scenes
-    Scene("splash", SplashScreenScene)
+    Scene("CLogo", CompanyLogo)
+    Scene("GLogo", GameLogo)
     Scene("MScene", MainScene)
     Scene("MGame", MainGame)
     Scene("Store", Store)
     
-    Scene.Change("splash")
+    
+    Scene.Change("CLogo")
     
 end
 
