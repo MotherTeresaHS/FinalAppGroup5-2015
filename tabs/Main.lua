@@ -5,6 +5,7 @@
 -- Created on: Nov 2015
 -- Created for: ICS20
 -- This program is a test app for group 5
+-- test change
 
 -- Use this function to perform your initial setup
 function setup()
