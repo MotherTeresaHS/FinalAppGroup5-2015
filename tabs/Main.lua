@@ -18,12 +18,14 @@ function setup()
     pushStyle()
     
     --create the scenes
-    Scene("splash", SplashScreenScene)
+    Scene("CLogo", CompanyLogo)
+    Scene("GLogo", GameLogo)
     Scene("MScene", MainScene)
     Scene("MGame", MainGame)
     Scene("Store", Store)
     
-    Scene.Change("splash")
+    
+    Scene.Change("CLogo")
     
 end
 
