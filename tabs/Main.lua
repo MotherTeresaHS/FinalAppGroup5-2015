@@ -23,7 +23,7 @@ function setup()
     Scene("MScene", MainScene)
     Scene("MGame", MainGame)
     Scene("Store", Store)
-    
+    Scene("WSelect", WorldSelect)
     
     Scene.Change("CLogo")
     

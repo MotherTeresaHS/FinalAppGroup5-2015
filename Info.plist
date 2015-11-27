@@ -12,6 +12,7 @@
 		<string>MainScene</string>
 		<string>MainGame</string>
 		<string>Store</string>
+		<string>WorldSelect</string>
 		<string>HelperClass</string>
 	</array>
 	<key>Description</key>
