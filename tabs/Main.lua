@@ -1,11 +1,10 @@
 -- Main
--- Lesson8
+-- FinalAppGroup5-2015
 
 -- Created by: Justin Bronson
 -- Created on: Nov 2015
 -- Created for: ICS20
--- This program is a test app for group 5
--- test change
+-- This is the main tab
 
 -- Use this function to perform your initial setup
 function setup()
@@ -24,6 +23,8 @@ function setup()
     Scene("MGame", MainGame)
     Scene("Store", Store)
     Scene("WSelect", WorldSelect)
+    Scene("Setting", Settings)
+    Scene("Credits", Credits)
     
     Scene.Change("CLogo")
     
