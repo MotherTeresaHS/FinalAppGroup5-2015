@@ -1,10 +1,10 @@
 -- MainScene
--- Lesson8
+-- FinalAppGroup5-2015
 
 -- Created by: Justin Bronson
 -- Created on: Nov 2015
 -- Created for: ICS20
--- This program displays multiple screens
+-- This program displays multiple buttons to change to different scenes
 
 MainScene = class()
 
