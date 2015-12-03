@@ -1,10 +1,10 @@
 -- Main
--- Lesson8
+-- FinalAppGroup5-2015
 
 -- Created by: Justin Bronson
 -- Created on: Nov 2015
 -- Created for: ICS20
--- This program is a test app for group 5
+-- This is the main tab
 
 -- Use this function to perform your initial setup
 function setup()
@@ -17,12 +17,16 @@ function setup()
     pushStyle()
     
     --create the scenes
-    Scene("splash", SplashScreenScene)
+    Scene("CLogo", CompanyLogo)
+    Scene("GLogo", GameLogo)
     Scene("MScene", MainScene)
     Scene("MGame", MainGame)
     Scene("Store", Store)
+    Scene("WSelect", WorldSelect)
+    Scene("Setting", Settings)
+    Scene("Credits", Credits)
     
-    Scene.Change("splash")
+    Scene.Change("CLogo")
     
 end
 

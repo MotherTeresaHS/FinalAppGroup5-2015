@@ -1,22 +1,21 @@
--- Store
+-- WorldSelect
 -- FinalAppGroup5-2015
 
 -- Created by: Justin Bronson
 -- Created on: Nov 2015
 -- Created for: ICS20
--- This program is where you can get extra hints
+-- This program is where you can choose a world to play in
 
-Store = class()
+WorldSelect = class()
 
-function Store:init(x)
+function WorldSelect:init(x)
     -- you can accept and set parameters here
-    self.x = x
 end
 
-function Store:draw()
+function WorldSelect:draw()
     -- Codea does not automatically call this method
 end
 
-function Store:touched(touch)
+function WorldSelect:touched(touch)
     -- Codea does not automatically call this method
 end
