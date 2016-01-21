@@ -4,7 +4,7 @@
 -- Created by: Justin Bronson
 -- Created on: Nov 2015
 -- Created for: ICS20
--- This program shows the company logo for 1 second then changes to the game logo
+-- This scene shows the company logo for 1 second then changes to the game logo
 CompanyLogo = class()
 
 local startTimeTwo
@@ -23,7 +23,7 @@ function CompanyLogo:draw()
     
     print(ElapsedTime)
     print("End time is " .. startTimeTwo + 1)
-    if(startTimeTwo + 1 < ElapsedTime) then
+    if(startTimeTwo + 2 < ElapsedTime) then
         Scene.Change("GLogo")
         print("The end time is " .. ElapsedTime)
         

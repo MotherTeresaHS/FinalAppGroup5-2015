@@ -1,10 +1,11 @@
 -- GameLogo
+
 -- FinalAppGroup5-2015
 
 -- Created by: Justin Bronson
 -- Created on: Nov 2015
 -- Created for: ICS20
--- This program shows the game logo for 1 second then goes to the main scene
+-- This scene shows the game logo for 1 second then goes to the main scene
 
 GameLogo = class()
 
@@ -25,7 +26,7 @@ function GameLogo:draw()
     
     print(ElapsedTime)
     print("End time is " .. startTime + 1)
-    if(startTime + 1 < ElapsedTime) then
+    if(startTime + 2 < ElapsedTime) then
         Scene.Change("MScene")
         print("The end time is " .. ElapsedTime)
     end
@@ -34,9 +35,4 @@ end
 function GameLogo:touched(touch)
     -- Codea does not automatically call this method
     
-    moveForwardButton:touched(touch)
-    
-    if(moveForwardButton.selected == true) then
-        Scene.Change("MScene")
-    end
 end

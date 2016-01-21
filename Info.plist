@@ -10,11 +10,19 @@
 		<string>CompanyLogo</string>
 		<string>GameLogo</string>
 		<string>MainScene</string>
-		<string>MainGame</string>
-		<string>Store</string>
-		<string>WorldSelect</string>
 		<string>Settings</string>
 		<string>Credits</string>
+		<string>Store</string>
+		<string>Tutorial</string>
+		<string>TutCorrect</string>
+		<string>WorldSelect</string>
+		<string>Iceberg</string>
+		<string>CandyLand</string>
+		<string>Stormy</string>
+		<string>Peachy</string>
+		<string>Stargaze</string>
+		<string>LevelChosen</string>
+		<string>CorrectScene</string>
 		<string>HelperClass</string>
 	</array>
 	<key>Description</key>
