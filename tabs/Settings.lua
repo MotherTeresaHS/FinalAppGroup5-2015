@@ -65,9 +65,13 @@ function Settings:touched(touch)
     resetButton:touched(touch)
     
     if(resetButton.selected == true) then
-        stars = nil
-        totalStars = nil
-        highscore = nil
+        stars = 0
+        saveLocalData("stars", stars)
+        totalStars = 0
+        saveLocalData("highscore", totalStars)
+        hints = 0
+        saveLocalData("hints", hints)
+        alert("Scores, Skips and Stars have been reset")
     end
     musicOff:touched(touch)
     

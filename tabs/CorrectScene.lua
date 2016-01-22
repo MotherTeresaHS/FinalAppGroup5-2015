@@ -34,7 +34,18 @@ end
 function CorrectScene:touched(touch)
     backButton:touched(touch)
     if (backButton.selected == true)then
-        Scene.Change("WSelect")
+        if (worldSelect == "iceberg")then
+            Scene.Change("Ice")
+        elseif (worldSelect == "candyland")then
+            Scene.Change("Candy")
+        elseif (worldSelect == "stormy")then
+            Scene.Change("Storm")
+        elseif (worldSelect == "peachy")then
+            Scene.Change("Peach")
+        elseif (worldSelect == "stargaze")then
+            Scene.Change("Star")
+        end
+        
     end
 end
 

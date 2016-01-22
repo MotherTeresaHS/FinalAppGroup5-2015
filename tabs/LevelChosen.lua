@@ -75,7 +75,7 @@ function LevelChosen:init()
     print("Correct answer is: " .. seriesToShow[positionOfBlank])
     correctAnswerImage = seriesToShow[positionOfBlank]
     correctAnswerPosition = positionOfBlank
-    seriesToShow[positionOfBlank] = "Cargo Bot:Condition None"
+    seriesToShow[positionOfBlank] = "Dropbox:blackLine"
     
 
     for loopCounter = 1,9 do
@@ -119,7 +119,11 @@ function LevelChosen:draw()
     font("AmericanTypewriter-Bold")
     fontSize(50)
     fill(0, 244, 255, 255)
-    text("skips" ..  hints, WIDTH/2, HEIGHT/2+250)
+    text("Skips" ..  hints, WIDTH/2, HEIGHT/2+250)
+    fill(0, 244, 255, 255)
+    font("AmericanTypewriter-Bold")
+    fontSize(50)
+    text("Stars" .. stars, WIDTH/2-200, HEIGHT/2+250)
     -- Codea does not automatically call this method
     if(worldSelect == "iceberg")then
         sprite("Dropbox:iceberg", WIDTH/2, HEIGHT/2, 1024, 768)
@@ -137,6 +141,11 @@ function LevelChosen:draw()
     text("skips:" .. math.floor(hints), WIDTH/2+200, HEIGHT/2+300)
     fontSize(25)
     text("skip", WIDTH/2, HEIGHT/2+200)
+    fill(0, 244, 255, 255)
+    font("AmericanTypewriter-Bold")
+    fontSize(50)
+    text("Stars:" .. math.floor(stars), WIDTH/2-200, HEIGHT/2+300)
+ 
     --background(121, 255, 0, 255)
 
     for loopCounter = 1,#shapes do
@@ -154,6 +163,8 @@ function LevelChosen:touched(touch)
         if (hintButton.selected == true) then
             hints = hints-1
             saveLocalData("hints", hints)
+            stars = stars + 3
+            saveLocalData("stars", stars)
             shapeLocation = vec2(100, 100)
             Scene.Change("correct")
         end
@@ -175,6 +186,7 @@ function LevelChosen:touched(touch)
         totalStars = totalStars + 3
         saveLocalData("highscore", totalStars)
         Scene.Change("correct")
+        
         
     end
 

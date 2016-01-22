@@ -13,16 +13,19 @@ local moveMainGame
 local moveStore
 local tutorial
 local moveSettings
+local leaderboardButton
 
 function MainScene:init(x)
     --sprite("Dropbox:PlayButton")
     --sprite("Dropbox:ShoppingCart@-2k")
     --sprite("Dropbox:Purple Info Button")
     --sprite("Dropbox:Teal Settings Button")
-    moveMainGame = Button("Dropbox:PlayButton", vec2(WIDTH/2, HEIGHT/2))
+    moveMainGame = Button("Dropbox:startButton", vec2(WIDTH/2, HEIGHT/2))
     moveStore = Button("Dropbox:ShoppingCart@-2k", vec2(924, 668))
     tutorial = Button("Dropbox:Purple Info Button", vec2(924, 100))
     moveSettings = Button("Dropbox:Teal Settings Button", vec2(100, 668))
+    leaderboardButton = Button("Dropbox:leaderboardsButton", vec2(WIDTH/2-300, HEIGHT/2-300))
+    --sprite("Dropbox:achievementsButton")
 end
 
 function MainScene:draw()
@@ -32,6 +35,7 @@ function MainScene:draw()
     moveStore:draw()
     tutorial:draw()
     moveSettings:draw()
+    leaderboardButton:draw()
     
     font("AmericanTypewriter-Bold")
     fontSize(25)
@@ -64,5 +68,13 @@ function MainScene:touched(touch)
     
     if(moveSettings.selected == true) then
         Scene.Change("Setting")
+    end
+    
+    leaderboardButton:touched(touch)
+    
+    if (leaderboardButton.selected == true)then
+        if(gamecenter.enabled() == true)then
+            gamecenter.showLeaderboards()
+        end
     end
 end
