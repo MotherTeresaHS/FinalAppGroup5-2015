@@ -27,13 +27,13 @@ function Tutorial:init(x)
     shapeTwo = Button("Dropbox:circleRed", vec2(292, 150))
     shapeThree = Button("Dropbox:diamondOrange", vec2(438, 150))
     shapeFour = Button("Dropbox:diamondOrange", vec2(584, 150))
-    shapeMissing = SpriteObject("Dropbox:BlackLine", vec2(730, 100))
+    shapeMissing = SpriteObject("Dropbox:blackLine", vec2(730, 120))
     shapeSix = Button("Dropbox:diamondOrange", vec2(876, 150))
     optionOne = SpriteObject("Dropbox:circleYellow", vec2(256, 300))
     optionTwo = SpriteObject("Dropbox:diamondBlue", vec2(512, 300))
     optionThree = SpriteObject("Dropbox:circleRed", vec2(768, 300))
     shapeMissing.draggable = false
-    
+    --sprite("Dropbox:blackLine")
 end
 
 function Tutorial:draw()

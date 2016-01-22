@@ -4,7 +4,6 @@
 -- Created by: Justin Bronson
 -- Created on: Nov 2015
 -- Created for: ICS20
--- This is the main tab
 
 -- Use this function to perform your initial setup
 stars = 0
@@ -13,6 +12,7 @@ highscore = nil
 levelSelected = nil
 worldSelect = nil
 totalStars = 0
+DEBUG_GAMECENTER = true
 
 icebergWorld = {} 
 candyLandWorld = {} 
@@ -31,7 +31,7 @@ icebergWorldSeries[1][3] = "Dropbox:squareBlue"
 selectionShapes = {} 
 selectionShapes[1] = "Dropbox:rectangleRed" 
 selectionShapes[2] = "Dropbox:diamondRed" 
-selectionShapes[3] = "Dropbox:rectangleOrange" 
+selectionShapes[3] = "Dropbox:circleBlue" 
 selectionShapes[4] = "Dropbox:circleYellow" 
 selectionShapes[5] = "Dropbox:circleRed" 
 selectionShapes[6] = "Dropbox:squareBlue" 
@@ -144,12 +144,12 @@ peachyWorldSeries[3][2] = "Dropbox:number1Purple"
 peachyWorldSeries[3][3] = "Dropbox:number5Blue"
 
 peachyWorldSeries[4] = {}
-peachyWorldSeries[4][1] = "Dropbox:number3Yellow"
-peachyWorldSeries[4][2] = "Dropbox:number3Yellow"
+peachyWorldSeries[4][1] = "Dropbox:number3Blue"
+peachyWorldSeries[4][2] = "Dropbox:number3Blue"
 peachyWorldSeries[4][3] = "Dropbox:number1Purple"
 
 peachyWorldSeries[5] = {}
-peachyWorldSeries[5][1] = "Dropbox:bumber1Yellow"
+peachyWorldSeries[5][1] = "Dropbox:number1Yellow"
 peachyWorldSeries[5][2] = "Dropbox:number4Purple"
 peachyWorldSeries[5][3] = "Dropbox:number4Purple"
 
