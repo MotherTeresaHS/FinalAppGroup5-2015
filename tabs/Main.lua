@@ -12,7 +12,7 @@ highscore = nil
 levelSelected = nil
 worldSelect = nil
 totalStars = 0
-DEBUG_GAMECENTER = true
+DEBUG_GAMECENTER = false
 
 icebergWorld = {} 
 candyLandWorld = {} 
@@ -185,7 +185,7 @@ function setup()
     
     
     supportedOrientations(LANDSCAPE_ANY)
-    displayMode(FULLSCREEN)
+    displayMode(FULLSCREEN_NO_BUTTONS)
     noFill()
     noSmooth()
     noStroke()
@@ -220,7 +220,7 @@ end
 function draw()
     -- This sets a dark background color 
     background(40, 40, 50)
-    
+    sprite()
     Scene.Draw()
 end
 
