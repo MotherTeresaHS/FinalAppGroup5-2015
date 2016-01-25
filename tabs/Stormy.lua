@@ -18,7 +18,7 @@ Stormy = class()
 
 function Stormy:init(x)
     -- you can accept and set parameters here
-    
+    displayMode(FULLSCREEN_NO_BUTTONS)
     --sprite("Dropbox:Teal Back Circle Button")
     --sprite("Dropbox:number1Teal")
     moveBackSelect = Button("Dropbox:Blue Back Circle Button", vec2(100, 100))

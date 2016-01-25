@@ -26,6 +26,7 @@ local randomNumber
 local hintButton
 
 function LevelChosen:init()
+    displayMode(FULLSCREEN_NO_BUTTONS)
     hintButton = Button("Dropbox:circleOrange", vec2(WIDTH/2, HEIGHT/2+200))
     if (worldSelect == "iceberg") then
         for loopCounter = 1, 9 do
@@ -185,6 +186,9 @@ function LevelChosen:touched(touch)
         saveLocalData("stars", stars)
         totalStars = totalStars + 3
         saveLocalData("highscore", totalStars)
+       -- if (gamecenter.enabled() == true) then
+            --gamecenter.submitScore(math.floor(totalStars), "PatterPracticeLeaderboard")
+        --end
         Scene.Change("correct")
         
         

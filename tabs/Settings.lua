@@ -17,7 +17,7 @@ Settings = class()
 
 function Settings:init(x)
     -- you can accept and set parameters here
-    
+    displayMode(FULLSCREEN_NO_BUTTONS)
     --sprite("Dropbox:Red Info Button")
     --sprite("Dropbox:Teal Back Circle Button")
     --sprite("Dropbox:Green Redo Button")

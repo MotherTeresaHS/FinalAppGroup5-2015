@@ -8,7 +8,7 @@ local backButton
 -- Use this function to perform your initial setup
 function CorrectScene:init()
     supportedOrientations(LANDSCAPE_ANY)
-    displayMode(FULLSCREEN)
+    displayMode(FULLSCREEN_NO_BUTTONS)
     noFill()
     noSmooth()
     noStroke()

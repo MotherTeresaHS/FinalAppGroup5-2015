@@ -16,6 +16,7 @@ local moveSettings
 local leaderboardButton
 
 function MainScene:init(x)
+    displayMode(FULLSCREEN_NO_BUTTONS)
     --sprite("Dropbox:PlayButton")
     --sprite("Dropbox:ShoppingCart@-2k")
     --sprite("Dropbox:Purple Info Button")
@@ -36,7 +37,7 @@ function MainScene:draw()
     moveStore:draw()
     tutorial:draw()
     moveSettings:draw()
-    leaderboardButton:draw()
+    
     
     font("AmericanTypewriter-Bold")
     fontSize(25)
@@ -70,12 +71,9 @@ function MainScene:touched(touch)
     if(moveSettings.selected == true) then
         Scene.Change("Setting")
     end
+ 
+            
+            
+        
     
-    leaderboardButton:touched(touch)
-    
-    if (leaderboardButton.selected == true)then
-        if(gamecenter.enabled() == true)then
-            gamecenter.showLeaderboards()
-        end
-    end
 end
