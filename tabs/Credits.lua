@@ -13,7 +13,7 @@ Credits = class()
 
 function Credits:init(x)
     -- you can accept and set parameters here
-    
+    displayMode(FULLSCREEN_NO_BUTTONS)
     --sprite("Dropbox:Red Back Circle Button")
     moveBackSettings = Button("Dropbox:Red Back Circle Button", vec2( 100, 100))
 end

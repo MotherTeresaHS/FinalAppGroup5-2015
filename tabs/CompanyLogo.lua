@@ -11,7 +11,7 @@ local startTimeTwo
 
 function CompanyLogo:init(x)
     -- you can accept and set parameters here
-    
+    displayMode(FULLSCREEN_NO_BUTTONS)
     startTimeTwo = ElapsedTime
 end
 

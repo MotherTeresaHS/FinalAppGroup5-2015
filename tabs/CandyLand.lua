@@ -8,7 +8,7 @@
 -- This scene is where you can select witch level you want to play on CandyLand
 
 CandyLand = class()
-
+    
 --global to this fill
     local moveBackSelect
     local levelOne
@@ -19,7 +19,7 @@ CandyLand = class()
 
 function CandyLand:init(x)
     -- you can accept and set parameters here
-    print("")
+    displayMode(FULLSCREEN_NO_BUTTONS)
     --sprite("Dropbox:Teal Back Circle Button")
     --sprite("Dropbox:number1Teal")
     moveBackSelect = Button("Dropbox:Red Back Circle Button", vec2(100, 100))

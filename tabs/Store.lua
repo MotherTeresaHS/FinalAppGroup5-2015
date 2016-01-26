@@ -12,7 +12,7 @@ Store = class()
     local moveBackMain
     
 function Store:init()
-    
+    displayMode(FULLSCREEN_NO_BUTTONS)
     --sprite("Dropbox:Red Cancel Button")
     --sprite("Dropbox:Red Back Circle Button")
     buying1hint = Button("Dropbox:Red Cancel Button", vec2(300, 500, 100, 200))     

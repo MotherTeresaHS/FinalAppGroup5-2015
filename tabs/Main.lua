@@ -12,7 +12,7 @@ highscore = nil
 levelSelected = nil
 worldSelect = nil
 totalStars = 0
-DEBUG_GAMECENTER = false
+DEBUG_GAMECENTER = true
 
 icebergWorld = {} 
 candyLandWorld = {} 
@@ -156,7 +156,7 @@ peachyWorldSeries[5][3] = "Dropbox:number4Purple"
 
 starGazeWorldSeries = {} 
 starGazeWorldSeries[1] = {} 
-starGazeWorldSeries[1][1] = "Dropbox:bumber1Yellow" 
+starGazeWorldSeries[1][1] = "Dropbox:number1Yellow" 
 starGazeWorldSeries[1][2] = "Dropbox:diamondOrange" 
 starGazeWorldSeries[1][3] = "Dropbox:number2Teal"
 

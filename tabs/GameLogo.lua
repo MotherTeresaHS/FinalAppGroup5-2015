@@ -13,7 +13,7 @@ GameLogo = class()
 local startTime
 
 function GameLogo:init(x)
-    
+    displayMode(FULLSCREEN_NO_BUTTONS)   
     startTime = ElapsedTime
 end
 

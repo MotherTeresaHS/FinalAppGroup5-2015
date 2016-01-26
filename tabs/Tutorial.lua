@@ -18,7 +18,7 @@ Tutorial = class()
 
 function Tutorial:init(x)
     -- you can accept and set parameters here
-    
+    displayMode(FULLSCREEN_NO_BUTTONS)
     --sprite("Dropbox:circleRed")
     --sprite("Cargo Bot:Condition None")
     --sprite("Dropbox:diamondOrange")

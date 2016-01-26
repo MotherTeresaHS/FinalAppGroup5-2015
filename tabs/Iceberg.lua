@@ -8,7 +8,7 @@
 -- This scene is where you can select witch level you want to play on Iceberg
 
 Iceberg = class()
-
+    
 --global to this fill
     local moveBackSelect
     local levelOne
@@ -19,7 +19,7 @@ Iceberg = class()
 
 function Iceberg:init(x)
     -- you can accept and set parameters here
-
+    displayMode(FULLSCREEN_NO_BUTTONS)
     --sprite("Dropbox:Teal Back Circle Button")
     --sprite("Dropbox:number1Teal")
     moveBackSelect = Button("Dropbox:Yellow Back Circle Button", vec2(100, 100))
